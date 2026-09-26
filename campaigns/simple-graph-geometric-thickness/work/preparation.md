@@ -1,0 +1,7 @@
+# Partial Prepare evidence
+
+Recorded 2026-09-26. The fixed source corpus contains 120 distinct polynomial systems: 20 hand cases and 100 seeded random cases, with 64 YES and 56 NO. They cover zero to three real variables and include linear and quadratic atoms. Random YES cases fix a rational point and add a consistent square equation; random NO cases add a contradictory bound. `generate_cases.py` fixes all cases and seeds before candidate construction.
+
+Run `uv sync --locked` and `uv run --locked python campaigns/simple-graph-geometric-thickness/work/check.py --self-test`. The command runs `research/validate_preparation.py`, regenerates random cases, recomputes labels with Z3 nonlinear real arithmetic, checks rational witnesses with exact `Fraction` arithmetic and verifies all hand labels. It passed. Only `unsat` is NO; `unknown` raises. A positive `x²=2` instance raises `Algebraic witness encoding pending` instead of being assigned an invalid rational witness. Oracle: CPython 3.12.14 and locked `z3-solver` 4.16.0.0.
+
+Prepare remains blocked. The full existential-real source needs algebraic witnesses and arbitrary finite Boolean combinations. The target needs an exact finite coordinate model, crossing validator and conclusive recognition oracle for simple graphs; a bounded coordinate-grid search cannot certify NO-SOLUTION. No candidate gate, reduction, proof or solution is claimed; zero construction rounds were authorized.

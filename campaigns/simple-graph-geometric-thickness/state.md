@@ -1,14 +1,12 @@
 # Existential theory of the reals → Geometric thickness of simple graphs campaign state
 
-Status: Prepare pending. No reduction or solution is claimed.
+Status: Prepare partial. A 120-case rational-witness source corpus is fixed and checked; full algebraic witnesses and target oracle remain pending. No reduction or solution is claimed.
 
-Scope: establish the independent testing foundation only.
+Scope: independent testing foundation only. Round budget: 0 construction rounds authorized.
 
-Round budget: 0 construction rounds authorized in this setup task.
+Capability probe: CPython 3.12.14 and locked `z3-solver` 4.16.0.0 for nonlinear real source checks. See [preparation.md](work/preparation.md).
 
-Capability probe: pending. Record dated versions and availability before Prepare.
-
-Next action: read the fixed question, then complete `.agents/skills/research-prepare/SKILL.md` and commit its corpus, oracles, checks and limitations.
+Next action: fix and validate the full finite algebraic source witness encoding, then build a sound simple-graph geometric-thickness target oracle and candidate gate.
 
 | ID | Attempted mechanism or literature scope | First check | Outcome | Evidence |
 |---|---|---|---|---|
