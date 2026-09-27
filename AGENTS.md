@@ -1,7 +1,5 @@
 # Research instructions
 
-This repository owns one campaign: [Existential theory of the reals → Geometric thickness of simple graphs](campaigns/simple-graph-geometric-thickness/question.md). Read its [state](campaigns/simple-graph-geometric-thickness/state.md) before work.
+Read the [fixed question](campaigns/simple-graph-geometric-thickness/question.md), [prior state](campaigns/simple-graph-geometric-thickness/state.md) and [preparation notes](campaigns/simple-graph-geometric-thickness/work/preparation.md). The fixed [test corpus](campaigns/simple-graph-geometric-thickness/work/cases.json) and [verifier](campaigns/simple-graph-geometric-thickness/work/check.py) are the starting evidence; the preparation notes state their coverage and any pending checks.
 
-Use the copied `.agents/skills/research-prepare/SKILL.md` and `research/` specifications. Make only evidence-backed claims, commit preparation before construction, and retain failed checks. No construction rounds are authorized by this setup task.
-
-The source question board is at `/Users/xiweipan/Codes/autoresearch-gadgets`. Its shared experience entries stay there; do not copy them into this repository. Use uv and a committed lockfile when Python dependencies are needed.
+Run `uv sync --locked`, then `uv run --locked python campaigns/simple-graph-geometric-thickness/work/check.py --self-test` before relying on that evidence. Follow the current user's AutoResearch pipeline. Scope and budgets in the state describe earlier work and do not limit a new campaign. Preserve prior evidence, commit new work incrementally and make only evidence-backed claims.
